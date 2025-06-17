@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@* IT is 2 Tpyes of Pertial view Used Dyanically Partial View  in Address*@
+@model StaticPartialView.Models.Address
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<partial name="_Address" /> @* First method using Static Partial view *@
+<br />
+
+@Html.Partial("_Address"); @* Second method using Static Partial view *@
+
+<br />
+@* IT is 2 Tpyes of Pertial view Used Dyanically Partial View  in Address*@
+<partial name="_Address1" model="@Model"/>

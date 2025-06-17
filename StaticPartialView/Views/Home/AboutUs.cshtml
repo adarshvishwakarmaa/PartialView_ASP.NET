@@ -1,0 +1,15 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@* IT is 2 Tpyes of Pertial view Used Dyanically Partial View  in Address*@
+@model StaticPartialView.Models.Address
+<h1>This is About Use Page</h1>
+<partial name="_Address" />   @* First method using Static Partial view *@
+
+@Html.Partial("_Address"); @* Second method using Static Partial view *@
+
+<br />
+@* IT is 2 Tpyes of Pertial view Used Dyanically Partial View  in Address*@
+<partial name="_Address1" model="@Model" />
